@@ -64,7 +64,7 @@ class Weather:
                " " + "最低气温" + cond[7] + "°C"
 
         account = "AC7f63698bf6c852f6311153fad0c9f941"
-        token = "d0f18c508c25488b6b02e29db3f52500"
+        token = "4429ccd72c74ec477be67b3f17699386"
         from_ = "+18569421593"
         to = "+8618653195606"
 
