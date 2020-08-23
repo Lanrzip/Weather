@@ -69,14 +69,14 @@ def main(df, name):
 
     return fig
 
-
-@app.callback(Output('intermediate-value','children'), [Input('update','n_intervals')])
-def update_data(n):
-    weather.job()
-    weather.send_message('济南', weather.city_list)
-
-    return "更新时间：{}".format(time.strftime("%Y-%m-%d %H:%M:%S",
-                                              time.localtime(weather.last_time)))
+# # 每日短信提醒
+# @app.callback(Output('intermediate-value','children'), [Input('update','n_intervals')])
+# def update_data(n):
+#     weather.job()
+#     weather.send_message('济南', weather.city_list)
+#
+#     return "更新时间：{}".format(time.strftime("%Y-%m-%d %H:%M:%S",
+#                                               time.localtime(weather.last_time)))
 
 
 @app.callback(Output('graph', 'figure'),

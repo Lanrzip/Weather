@@ -1,3 +1,7 @@
+"""
+若要使用短信功能请更改send_message函数中的相应参数
+"""
+
 import re
 import time
 import requests
@@ -63,10 +67,11 @@ class Weather:
                "夜间天气：" + cond[5] + " " + cond[6] + \
                " " + "最低气温" + cond[7] + "°C"
 
-        account = "AC7f63698bf6c852f6311153fad0c9f941"
-        token = "4429ccd72c74ec477be67b3f17699386"
-        from_ = "+18569421593"
-        to = "+8618653195606"
+        # 需更改的参数
+        account = "ACCOUNT"
+        token = "TOKEN"
+        from_ = "FROM"
+        to = "TO"
 
         client = Client(account, token)
         message = client.messages.create(to=to,
